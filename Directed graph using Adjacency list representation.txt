@@ -1,0 +1,146 @@
+Directed graph using Adjacency list representation
+
+def addnode(v):
+    if v in graph:
+        print(v,"is already available")
+    else:
+        graph[v]=[]
+def show():
+    for x in graph:
+        print(x,":",graph[x])
+def addEdge(node1,node2):
+    if node1 not in graph:
+        print(node1,"is not present in graph")
+    elif node2 not in graph:
+        print(node2,"is not present in graph")
+    else:
+        graph[node1].append(node2)
+        
+        
+graph={}
+while True:
+    print()
+    print("1.Add node\n 2.Add edge\n 3.print list\n 4.Exit")
+    ch=int(input("Enter your choice"))
+    if ch==1:
+        v=input("enter a node")
+        addnode(v)
+    elif ch==2:
+        node1=input("enter first node")
+        node2=input("enter second node")
+        addEdge(node1,node2)
+    elif ch==3:
+        show()
+    elif ch==4:
+        break
+    else:
+        print("Invalid choice")
+
+Output:
+
+def addnode(v):
+    if v in graph:
+        print(v,"is already available")
+    else:
+        graph[v]=[]
+def show():
+    for x in graph:
+        print(x,":",graph[x])
+def addEdge(node1,node2):
+    if node1 not in graph:
+        print(node1,"is not present in graph")
+    elif node2 not in graph:
+        print(node2,"is not present in graph")
+    else:
+        graph[node1].append(node2)
+        
+        
+graph={}
+while True:
+    print()
+    print("1.Add node\n 2.Add edge\n 3.print list\n 4.Exit")
+    ch=int(input("Enter your choice"))
+    if ch==1:
+        v=input("enter a node")
+        addnode(v)
+    elif ch==2:
+        node1=input("enter first node")
+        node2=input("enter second node")
+        addEdge(node1,node2)
+    elif ch==3:
+        show()
+    elif ch==4:
+        break
+    else:
+        print("Invalid choice")
+
+output:
+
+ 1.Add node
+ 2.Add edge
+ 3.print list
+ 4.Exit
+Enter your choice1
+enter a nodea
+
+ 1.Add node
+ 2.Add edge
+ 3.print list
+ 4.Exit
+Enter your choice1
+enter a nodeb
+
+ 1.Add node
+ 2.Add edge
+ 3.print list
+ 4.Exit
+Enter your choice1
+enter a nodec
+
+ 1.Add node
+ 2.Add edge
+ 3.print list
+ 4.Exit
+Enter your choice2
+enter first nodea
+enter second nodeb
+
+ 1.Add node
+ 2.Add edge
+ 3.print list
+ 4.Exit
+Enter your choice2
+enter first nodec
+enter second nodeb
+
+ 1.Add node
+ 2.Add edge
+ 3.print list
+ 4.Exit
+Enter your choice3
+a : ['b']
+b : []
+c : ['b']
+
+ 1.Add node
+ 2.Add edge
+ 3.print list
+ 4.Exit
+Enter your choice2
+enter first nodea
+enter second nodec
+
+ 1.Add node
+ 2.Add edge
+ 3.print list
+ 4.Exit
+Enter your choice3
+a : ['b', 'c']
+b : []
+c : ['b']
+
+ 1.Add node
+ 2.Add edge
+ 3.print list
+ 4.Exit
+Enter your choice4
